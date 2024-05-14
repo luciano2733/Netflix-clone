@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: 000;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(50%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    height: 100px;
+    position: relative;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_left img {
+    width: 10.4375rem;
+    height: 2.8125rem;
+    filter: brightness(120%);
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_right form {
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    margin-right: 20px;
+}
+
+.language select {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    outline: 0;
+}
+
+.language select option {
+    background-color: grey;
+}
+
+.register input {
+    width: 100px;
+    height: 35px;
+    background-color: #FF1E28;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.register input:hover {
+    background-color: red;
+}
+
+main {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+
+main .title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+}
+
+main .subtitle {
+    font-size: 1.625rem;
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+
+main .finaltitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.email input {
+    width: 500px;
+    height: 70px;
+    padding-left: 15px;
+    font-size: 15px;
+    outline: 0;
+}
+
+.login input[type="button"] {
+    height: 70px;
+    width: 180px;
+    border-left: 1px solid #333;
+    background-color: #FF1E28;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+}
+
+.login input[type="button"]:hover {
+    background-color: red;
+}
+
+.email input:focus {
+    border: 1px solid #73ABE7;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .language select {
+        width: 94px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .header_left img {
+        width: 10.3rem;
+        height: 2.7rem;
+        filter: brightness(120%);
+    }
+
+    .register input {
+        width: 94px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    main .title {
+        font-size: 3.3rem;
+        margin-bottom: 11px;
+    }
+    
+    main .subtitle {
+        font-size: 1.500rem;
+        margin-bottom: 23px;
+    }
+    
+    main .finaltitle {
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+    }
+
+    .email input {
+        width: 480px;
+        height: 65px;
+        font-size: 14px;
+    }
+
+    .login input[type="button"] {
+        height: 65px;
+        width: 170px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    main .title {
+        width: 400px;
+        margin: auto;
+        font-size: 3.3rem;
+        margin-bottom: 11px;
+    }
+    
+    main .subtitle {
+        width: 400px;
+        margin: auto;
+        font-size: 1.500rem;
+        margin-bottom: 23px;
+    }
+    
+    main .finaltitle {
+        width: 400px;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+    }
+
+    .email input {
+        width: 350px;
+        height: 65px;
+        font-size: 14px;
+    }
+
+    .login input[type="button"] {
+        height: 65px;
+        width: 140px;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    main .title {
+        display: none;
+    }
+    
+    main .subtitle {
+        display: none;
+    }
+    
+    main .finaltitle {
+        display: none;
+    }
+
+    .email input {
+        width: 300px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .login input[type="button"] {
+        height: 60px;
+        width: 120px;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .language select {
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .header_left img {
+        width: 6rem;
+        height: 1.8rem;
+        filter: brightness(120%);
+    }
+
+    .register input {
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .email input {
+        width: 200px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .login input[type="button"] {
+        height: 60px;
+        width: 100px;
+        font-size: 22px;
+    }
+}
